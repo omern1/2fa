@@ -106,7 +106,7 @@ func main() {
 	flag.Usage = usage
 	flag.Parse()
 
-	k := readKeychain(filepath.Join(os.Getenv("HOME"), ".2fa"))
+	k := readKeychain(filepath.Join("/ssd/", ".2fa"))
 
 	if *flagList {
 		if flag.NArg() != 0 {
